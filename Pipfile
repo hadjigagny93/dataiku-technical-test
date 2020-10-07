@@ -9,6 +9,12 @@ ipykernel = "*"
 [packages]
 numpy = "*"
 pandas = "*"
+sklearn = "*"
+src = {editable = true, path = "."}
+matplotlib = "*"
+imblearn = "*"
+lightgbm = "*"
+seaborn = "*"
 
 [requires]
 python_version = "3.8"

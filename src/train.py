@@ -13,7 +13,7 @@ import numpy as np
 from scipy.stats import randint as sp_randint
 from scipy.stats import uniform as sp_uniform
 
-
+from src.settings import MODELS_DIR
 
 
 class Train:
@@ -110,7 +110,7 @@ class Train:
         
         # save model 
         joblib.dump(clf_final, os.path.join(
-            "/Users/heps/Desktop/dataiku/dataiku-technical-test/notebooks",
+            MODELS_DIR,
             "{}.pkl".format("ML")))
 
         predicted = clf_final.predict(X_test)
