@@ -76,7 +76,7 @@ class Train:
             silent=True, 
             metric='None', 
             n_jobs=4, 
-            n_estimators=10000)
+            n_estimators=900)
         # set randomsearch optimization params
         random_search = RandomizedSearchCV(
             estimator=clf, 
